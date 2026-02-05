@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Frontend Developer Portfolio - crafting high-impact UI and interactive experiences">
+  <meta name="theme-color" content="#0b1018">
+  <title>FastDev | Frontend UI Engineer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" id="adminTrigger">FastDev<span class="logo-dot">.</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link" data-i18n="nav_home"></a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav_expertise"></a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="nav_projects"></a></li>
+        <li><a href="#process" class="nav-link" data-i18n="nav_process"></a></li>
+        <li>
+          <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">UZB</button>
+        </li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav_contact"></a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="eyebrow" data-i18n="hero_eyebrow"></div>
+          <h1 class="hero-title">
+            <span class="title-line" data-i18n="hero_title_line1"></span>
+            <span class="title-line gradient-text" data-i18n="hero_title_line2"></span>
+          </h1>
+          <p class="hero-description" data-i18n="hero_description"></p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card reveal" style="--delay: 0.15s">
+            <div class="image-container">
+              <div class="image-glow"></div>
+              <img src="profil.jpg" alt="Profile"
+                class="profile-img">
+            </div>
+            <div class="profile-info">
+              <div class="profile-name" data-i18n="profile_status"></div>
+              <div class="profile-tags">
+                <span>Design System</span>
+                <span>Motion Systems</span>
+              </div>
+              <div class="profile-role">
+                <span class="status-dot"></span>
+                <span>Frontend</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card reveal" style="--delay: 0s">
+            <span class="stat-value">6+</span>
+            <span class="stat-label" data-i18n="stat_years"></span>
+          </div>
+          <div class="stat-card reveal" style="--delay: 0.1s">
+            <span class="stat-value">40+</span>
+            <span class="stat-label" data-i18n="stat_interfaces"></span>
+          </div>
+          <div class="stat-card reveal" style="--delay: 0.2s">
+            <span class="stat-value">95+</span>
+            <span class="stat-label" data-i18n="stat_lighthouse"></span>
+          </div>
+        </div>
+
+        <div class="tech-strip" aria-label="Core stack">
+          <span>React</span>
+          <span>Next.js</span>
+          <span>TypeScript</span>
+          <span>Tailwind</span>
+          <span>GSAP</span>
+          <span>Figma</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="cta-button" data-i18n="hero_cta_primary"></a>
+          <a href="#projects" class="ghost-button" data-i18n="hero_cta_secondary"></a>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <span data-i18n="scroll_hint"></span>
+        <i class="fas fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="skills_title"></h2>
+          <p class="section-subtitle" data-i18n="skills_subtitle"></p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal" style="--delay: 0s">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 data-i18n="skill1_title"></h3>
+            <p data-i18n="skill1_desc"></p>
+            <div class="skill-chips">
+              <span>React</span>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--delay: 0.1s">
+            <div class="skill-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3 data-i18n="skill2_title"></h3>
+            <p data-i18n="skill2_desc"></p>
+            <div class="skill-chips">
+              <span>Storybook</span>
+              <span>Design Tokens</span>
+              <span>CSS Modules</span>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--delay: 0.2s">
+            <div class="skill-icon">
+              <i class="fas fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 data-i18n="skill3_title"></h3>
+            <p data-i18n="skill3_desc"></p>
+            <div class="skill-chips">
+              <span>GSAP</span>
+              <span>Framer</span>
+              <span>Lottie</span>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--delay: 0.3s">
+            <div class="skill-icon">
+              <i class="fas fa-gauge-high"></i>
+            </div>
+            <h3 data-i18n="skill4_title"></h3>
+            <p data-i18n="skill4_desc"></p>
+            <div class="skill-chips">
+              <span>Lighthouse</span>
+              <span>A11y</span>
+              <span>SEO</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="projects_title"></h2>
+          <p class="section-subtitle" data-i18n="projects_subtitle"></p>
+        </div>
+        <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="process_title"></h2>
+          <p class="section-subtitle" data-i18n="process_subtitle"></p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal" style="--delay: 0s">
+            <span class="process-step">01</span>
+            <h3 data-i18n="process1_title"></h3>
+            <p data-i18n="process1_desc"></p>
+          </article>
+          <article class="process-card reveal" style="--delay: 0.1s">
+            <span class="process-step">02</span>
+            <h3 data-i18n="process2_title"></h3>
+            <p data-i18n="process2_desc"></p>
+          </article>
+          <article class="process-card reveal" style="--delay: 0.2s">
+            <span class="process-step">03</span>
+            <h3 data-i18n="process3_title"></h3>
+            <p data-i18n="process3_desc"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="contact_title"></h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle"></p>
+        </div>
+        <div class="contact-shell">
+          <div class="contact-panel reveal" style="--delay: 0s">
+            <h3 data-i18n="contact_heading"></h3>
+            <p data-i18n="contact_lead"></p>
+            <div class="contact-grid">
+              <a href="mailto:nogabek221@gmail.com" class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <span>nogabek221@gmail.com</span>
+              </a>
+              <a href="tel:+998882288083" class="contact-card">
+                <i class="fas fa-phone"></i>
+                <span>+998 88 228 80 83</span>
+              </a>
+              <a href="https://github.com/narzullayevogabek86-cmyk" target="_blank" rel="noopener noreferrer"
+                class="contact-card">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="http://linkedin.com/in/ogabek-narzullayev-8715572a1" target="_blank"
+                rel="noopener noreferrer" class="contact-card">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal" style="--delay: 0.1s" action="#" id="contactForm">
+            <label>
+              <span data-i18n="form_name_label"></span>
+              <input type="text" id="contactName" placeholder="" data-i18n-placeholder="form_name_placeholder"
+                required>
+            </label>
+            <label>
+              <span data-i18n="form_email_label"></span>
+              <input type="email" id="contactEmail" placeholder="" data-i18n-placeholder="form_email_placeholder"
+                required>
+            </label>
+            <label>
+              <span data-i18n="form_message_label"></span>
+              <textarea rows="5" id="contactMessage" placeholder="" data-i18n-placeholder="form_message_placeholder"
+                required></textarea>
+            </label>
+            <button type="submit" class="cta-button" data-i18n="form_submit"></button>
+            <p class="form-status" id="contactStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 FastDev. <span data-i18n="footer_rights"></span></p>
+      <div class="social-links">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="admin-modal" id="adminLoginModal" aria-hidden="true">
+    <div class="admin-modal-backdrop" data-admin-close></div>
+    <div class="admin-modal-card" role="dialog" aria-modal="true" aria-labelledby="adminLoginTitle">
+      <div class="admin-modal-head">
+        <h2 id="adminLoginTitle" data-i18n="admin_login_title"></h2>
+        <button class="admin-close" type="button" data-admin-close aria-label="Close">&times;</button>
+      </div>
+      <form class="admin-form" id="adminLoginForm">
+        <label>
+          <span data-i18n="admin_login_email_label"></span>
+          <input type="email" id="adminLoginEmail" autocomplete="username" required>
+        </label>
+        <label>
+          <span data-i18n="admin_login_password_label"></span>
+          <input type="password" id="adminLoginPassword" autocomplete="current-password" required>
+        </label>
+        <p class="admin-error" id="adminLoginError" role="alert"></p>
+        <button type="submit" class="cta-button" data-i18n="admin_login_button"></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-panel" id="adminPanel" aria-hidden="true">
+    <div class="admin-panel-inner">
+      <div class="admin-panel-head">
+        <div class="admin-panel-title" data-i18n="admin_panel_title"></div>
+        <div class="admin-panel-actions">
+          <button class="ghost-button admin-action" id="adminLogout" data-i18n="admin_logout"></button>
+          <button class="ghost-button admin-action" id="adminClose" data-i18n="admin_close"></button>
+        </div>
+      </div>
+      <div class="admin-tabs">
+        <button class="admin-tab is-active" type="button" data-admin-tab="messages"
+          data-i18n="admin_tab_messages"></button>
+        <button class="admin-tab" type="button" data-admin-tab="projects"
+          data-i18n="admin_tab_projects"></button>
+      </div>
+      <div class="admin-tab-content is-active" id="adminTabMessages">
+        <div class="admin-section-head">
+          <h3 data-i18n="admin_messages_title"></h3>
+          <p class="admin-hint" data-i18n="admin_messages_hint"></p>
+        </div>
+        <div class="admin-list" id="adminMessagesList"></div>
+      </div>
+      <div class="admin-tab-content" id="adminTabProjects">
+        <div class="admin-section-head">
+          <h3 data-i18n="admin_projects_title"></h3>
+          <p class="admin-hint" data-i18n="admin_projects_hint"></p>
+        </div>
+        <form class="admin-form admin-project-form" id="adminProjectForm">
+          <input type="hidden" id="adminProjectId">
+          <label>
+            <span data-i18n="admin_project_title_label"></span>
+            <input type="text" id="adminProjectTitle" required>
+          </label>
+          <label>
+            <span data-i18n="admin_project_desc_uz_label"></span>
+            <textarea rows="3" id="adminProjectDescUz" required></textarea>
+          </label>
+          <label>
+            <span data-i18n="admin_project_desc_en_label"></span>
+            <textarea rows="3" id="adminProjectDescEn" required></textarea>
+          </label>
+          <label>
+            <span data-i18n="admin_project_image_label"></span>
+            <input type="url" id="adminProjectImage" placeholder="https://">
+          </label>
+          <label>
+            <span data-i18n="admin_project_image_file_label"></span>
+            <input type="file" id="adminProjectImageFile" accept="image/*">
+          </label>
+          <label>
+            <span data-i18n="admin_project_live_label"></span>
+            <input type="url" id="adminProjectLive" placeholder="https://">
+          </label>
+          <label>
+            <span data-i18n="admin_project_post_label"></span>
+            <input type="url" id="adminProjectPost" placeholder="https://">
+          </label>
+          <label>
+            <span data-i18n="admin_project_tags_label"></span>
+            <input type="text" id="adminProjectTags" placeholder="HTML, CSS, JavaScript">
+          </label>
+          <div class="admin-form-actions">
+            <button type="submit" class="cta-button" data-i18n="admin_project_save_button"></button>
+            <button type="button" class="ghost-button" id="adminProjectReset"
+              data-i18n="admin_project_reset_button"></button>
+          </div>
+          <p class="admin-hint" data-i18n="admin_project_hint"></p>
+          <p class="admin-status" id="adminProjectStatus" role="status" aria-live="polite"></p>
+        </form>
+        <div class="admin-grid" id="adminProjectsList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

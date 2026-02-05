@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="FastDev">
+  <defs>
+    <linearGradient id="fdGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a6ff4d"/>
+      <stop offset="100%" stop-color="#45d6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="#0b1018"/>
+  <rect x="40" y="40" width="432" height="432" rx="110" fill="url(#fdGrad)" opacity="0.18"/>
+  <g fill="#a6ff4d" font-family="Arial, sans-serif" font-weight="700" font-size="190">
+    <text x="50%" y="56%" text-anchor="middle">FD</text>
+  </g>
+</svg>
