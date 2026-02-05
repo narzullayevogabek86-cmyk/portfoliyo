@@ -1,0 +1,2 @@
+# portfoliyo
+Og'abek
